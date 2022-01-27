@@ -16,15 +16,14 @@ a{
 }
 #navbar{
     background:darkcyan;
-    display: flex;
-    justify-content: flex-end;
+    text-align: center;
     position: fixed;
     width:100%;
 }
 button{
     border:none;
     margin:10px;
-    padding:10px 20px;
+    padding:10px;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
@@ -85,6 +84,10 @@ footer i{
 @media screen and (min-width:720px){
     .project-grid{
         grid-template-columns: auto auto;
+    }
+    #navbar{
+        display: flex;
+    justify-content: flex-end;
     }
 }
 
