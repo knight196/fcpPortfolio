@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:burlywood;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+#navbar{
+    background:darkcyan;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width:100%;
+}
+button{
+    border:none;
+    margin:10px;
+    padding:10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background:url('./images/work.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap:20px;
+    padding:10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+.project-grid > div{
+    margin:10px;
+    background:lightseagreen;
+}
+#projects{
+    text-align:center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+    justify-content: center;
+}
+.project-grid img{
+width:100%;
+height:200px;
+}
+.linkproject{
+    background:darkslategrey;
+}
+.linkproject a {
+    color:white;
+}
+.linkproject a:hover{
+    color:coral;
+    transition:1s all;
+}
+footer{
+    text-align:center;
+    background:cornflowerblue;
+    margin-top:20px;
+    padding:10px 0;
+}
+footer i{
+    font-size: 30px;
+    color:white;
+}
+@media screen and (min-width:720px){
+    .project-grid{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width:1020px){
+    .project-grid{
+        grid-template-columns: auto auto auto auto;
+    }
+    footer{
+        margin-top:100px;
+    }
+}
